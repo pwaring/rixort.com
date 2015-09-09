@@ -23,7 +23,7 @@
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="http://cdn.pwaring.com/js/html5shiv.min.js"></script>
-      <script src="http://cdn.pwaring.com/js/respond/1.4.2/respond.min.js"></script>
+      <script src="http://cdn.pwaring.com/js/respond.min.js"></script>
     <![endif]-->
   </head>
 
