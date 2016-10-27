@@ -1,0 +1,18 @@
+title: phpBB card moderation system
+----
+<h2>phpBB card moderation system</h2>
+<p><strong>Note:</strong> This advisory was originally published on the <a href="http://www.phpbb.com/">phpBB web site</a>, but the topic has since been removed.</p>
+<p>I appear to have found a bug in phpBB that allows any anonymous user to ban or yellow card any other user who is not an administrator. The technique works via manipulating the URLs used for the red/yellow card
+system. The forum that I have tested this on can be found at: <a href="http://www.jrawly.co.uk/forum/">http://www.jrawly.co.uk/forum/</a> (BTW, this is not my forum, it is owned by someone who I know).</p>
+<p>The URL for banning users is in the following format:</p>
+<p><em>http://www.jrawly.co.uk/forum/card.php?b=xxx&amp;p=yyy</em></p>
+<p>Where <em>xxx</em> is the ID of the user to be banned and <em>yyy</em> is the id of the post which they are being banned for.</p>
+<p>Now, all I have to do is enter the above URL in my browser and insert the correct user/post IDs and I can ban that particular user. This works whilst I am not logged in (i.e. I am an anonymous user) and allows me to ban all users apart from those who are admins or who have not posted anything (because a post ID will not exist).</p>
+<p>This is particulary dangerous if your forum allows anonymous posting, because anyone can read the forums and get the user/post ids without having to create an account first.</p>
+<p>The problem looks to be in the file 'card.php', however I have not studied the source code in detail so I cannot be 100% sure that this is the case. Obviously there is an authentication problem somewhere along the line that means that the status of the banner is not checked.</p>
+<h2>Fixes</h2>
+<p>The main author of the card modification pack, Niels Chr. Denmark, has updated the mod to version 1.2.0 and the security hole has been patched in this and all later versions of the mod.</p>
+<h2>Recommendations</h2>
+<p>If you are still running a version of this software prior to 1.2.0, you are advised to upgrade <em>immediately</em> to fix this security hole. No further action other than the upgrade is necessary.</p>
+<h2>Further reading</h2>
+<p><a href="http://www.phpbb.com/">phpBB</a> - The official homepage of phpBB and the place to go for all the latest developments.</p>

@@ -1,0 +1,3 @@
+title: Security
+----
+<p><a href="phpbb-cards.html">phpBB card moderation system</a> - Advisory regarding security hole in this mod pack for phpBB. The flaw allows anyone to ban/unban any users apart from admins. (04/08/2002)</p>
