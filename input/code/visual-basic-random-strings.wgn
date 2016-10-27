@@ -1,0 +1,19 @@
+title: Visual Basic random strings
+----
+<p><em>modRandomString.bas:</em></p>
+<code>
+Option Explicit<br />
+<br />
+Public Function RandomString(ByVal LowerBound As Integer, ByVal UpperBound As Integer, ByVal StringLength As Integer) As String<br />
+<br />
+Dim i As Integer<br />
+<br />
+Rnd (1)<br />
+Randomize<br />
+<br />
+For i = 1 To StringLength<br />
+&nbsp;&nbsp;&nbsp;&nbsp;RandomString = RandomString &amp; Chr(Int((UpperBound - LowerBound + 1) * Rnd + LowerBound))<br />
+Next i<br />
+<br />
+End Function<br /><br />
+</code>

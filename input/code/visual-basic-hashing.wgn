@@ -1,0 +1,27 @@
+title: Visual Basic hashing
+----
+<p><em>modEncrypt.bas:</em></p>
+<code>
+Option Explicit<br />
+<br />
+Public Function Encrypt(ByVal Plaintext As String) As String<br />
+<br />
+Dim i As Integer<br />
+Dim x As Double<br />
+<br />
+x = 1<br />
+<br />
+
+For i = 1 To Len(Plaintext)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;x = Sqr(x * i * Asc(Mid(Plaintext, i, 1)))<br />
+Next i<br />
+<br />
+Rnd (-1)<br />
+Randomize x<br />
+<br />
+For i = 1 To 32<br />
+&nbsp;&nbsp;&nbsp;&nbsp;Encrypt = Encrypt &amp; Hex(Rnd * 15)<br />
+Next i<br />
+<br />
+End Function<br /><br />
+</code>

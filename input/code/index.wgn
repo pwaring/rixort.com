@@ -1,0 +1,7 @@
+title: Code
+----
+<p>Whenever I write a piece of code that I feel could be useful to other people (i.e. it isn't tied to one particular project that I'm working on), I'll post it here so anyone can use it, provided that they acknowledge where it originated.</p>
+
+<p><a href="vb-rand-strings.html">Visual Basic random strings</a> - Generate random strings quickly and easily in Visual Basic.</p>
+
+<p><a href="vb-hashing.html">Visual Basic hashing</a> - Simple but effective hashing (one-way encryption) in Visual Basic.</p>
