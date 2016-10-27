@@ -1,0 +1,16 @@
+title: Windows remove shortcut arrows
+----
+<h2>Windows remove shortcut arrows</h2>
+<p>Get rid of those annoying little arrows on Windows desktop shortcuts.</p>
+<h3>Assumed knowledge</h3>
+<p>In order to use this tip, I assume that you are familiar with creating shortcuts in some flavour of Windows from 95 onwards. I also assume that you know how to edit the registry and are aware of this dangers that this entails should you make a mistake.</p>
+<p>Make sure that you backup the registry <em>before</em> trying out this tip. If you don't know how to do this then you shouldn't try to use this tip until you do.</p>
+<h3>How to</h3>
+<ol type="1">
+<li>Open the <code>regedit</code> program</li>
+<li>Expand the tree called <code>HKEY_CLASSES_ROOT</code></li>
+<li>Scroll down to the folder called <code class="files">Lnkfile</code> and select it</li>
+<li>Delete the key called <code>IS_Shortcut</code> under the <code>Lnkfile</code> folder</li>
+<li>Reboot your computer for changes to take effect</li>
+</ol>
+<p>If this method doesn't work, you might want to have a look at <a href="http://en.wikipedia.org/wiki/Tweak_UI">Tweak UI</a>, which is a really useful application for Windows that can perform a lot of small user interface changes for you.</p>

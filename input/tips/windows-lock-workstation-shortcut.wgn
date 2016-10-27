@@ -1,0 +1,12 @@
+title: Windows lock workstation shortcut
+----
+<h2>Windows lock workstation shortcut</h2>
+<p>Create a shortcut to allow you to quickly lock your Windows 2000 computer, regardless of the security settings in effect. This tip will also lock your workstation in Windows XP Professional and a test at university confirms that it will work regardless of whether the option is enabled or not.</p>
+<h3>Assumed knowledge</h3>
+<p>In order to use this tip, I assume that you are familiar with creating shortcuts in Windows 2000/XP. I also assume that you know what 'locking your work station' actually <strong>does</strong>, and how to undo it.</p>
+<p><strong>N.B.</strong> On the set ups that I've worked with, it is possible to lock your work station using this shortcut even if your administrator has disabled this feature on the Windows Security screen (you can check this by holding down Ctrl-Alt-Del whilst logged on; if the <em>Lock Computer</em> button is greyed out then it is disabled).</p>
+<h3>How to</h3>
+<p>This tip is extremely easy to implement, just create a shortcut to the following location:</p>
+<p style="text-align: center"><code class="files">%windir%\System32\rundll32.exe user32.dll,LockWorkStation</code></p>
+<p>Note that the shortcut location must be entered <strong>exactly</strong> as above; especially the LockWorkStation part, which is case-sensitive. The <code>%windir%</code> part just points to your main Windows directory (usually <code>C:\WINNT</code>), but by using this method the shortcut should work on all configurations.</p>
+<p>If this tip doesn't work on your machine, or causes strange side effects, please <a href="/contact/">let me know</a> so that I can alter the instructions accordingly.</p>
