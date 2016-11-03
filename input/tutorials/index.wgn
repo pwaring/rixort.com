@@ -1,3 +1,5 @@
 title: Tutorials
 ----
-<p><a href="https://www.phpdeveloper.org.uk/articles/php-coding-guidelines/"
+<p><a href="https://www.phpdeveloper.org.uk/articles/php-coding-guidelines/">PHP coding guidelines</a> - The guidelines that I follow when writing my PHP scripts; can be helpful to have something like this if you're working on a joint project.</p>
+
+<p><a href="using-htaccess-files.html">Using .htaccess files</a> - Learn how to configure many aspects of the Apache web server through the .htaccess configuration files.</p>
